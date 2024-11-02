@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" alignment="center" spacing="10" fx:controller="com.example.kursovaya.MainController" style="-fx-background-color: #FFD700; -fx-padding: 20;">
+    <VBox alignment="top_left" spacing="5">
+        <Text text="Організація таксі" style="-fx-font-size: 20;"/>
+        <Text text="Ігнатов Ас-221" style="-fx-font-size: 16;"/>
+    </VBox>
+    <VBox alignment="center" spacing="10">
+        <Button text="Прийняти нове замовлення" fx:id="makeOrderButton" onAction="#handleCreateOrder" prefWidth="200"/>
+        <Button text="Інформація про водіїв" fx:id="viewDriversButton" onAction="#handleviewDrivers" prefWidth="200"/>
+        <Button text="Інформація про замовлення" fx:id="viewOrdersButton" onAction="#handleviewOrders" prefWidth="200"/>
+        <Button text="Інформація про клієнтів" fx:id="viewClientsButton" onAction="#handleViewClients" prefWidth="200"/>
+        <Button text="Інформація про графіки" fx:id="viewSchedulesButton" onAction="#handleViewSchedules" prefWidth="200"/>
+    </VBox>
+</VBox>

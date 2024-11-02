@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" alignment="center" spacing="10" fx:controller="com.example.kursovaya.DriversInfoController" style="-fx-background-color: #FFD700; -fx-padding: 20;">
+    <TableView fx:id="driversTable">
+        <columns>
+            <TableColumn fx:id="driverIDColumn" text="DriverID"/>
+            <TableColumn fx:id="nameColumn" text="Name"/>
+            <TableColumn fx:id="licenseNumberColumn" text="License Number"/>
+            <TableColumn fx:id="phoneNumberColumn" text="Phone Number"/>
+        </columns>
+    </TableView>
+    <TextField fx:id="driverIDField" promptText="DriverID"/>
+    <TextField fx:id="nameField" promptText="Name" />
+    <TextField fx:id="licenseNumberField" promptText="License Number" />
+    <TextField fx:id="phoneNumberField" promptText="Phone Number" />
+    <Button fx:id="addDriverButton" text="Додати водія" onAction="#addDriver"/>
+    <Button text="Видалити водія" onAction="#deleteDriver"/>
+
+    <Label text="Make:"/>
+    <TextField fx:id="makeField"/>
+
+    <Label text="Model:"/>
+    <TextField fx:id="modelField"/>
+
+    <Label text="Year:"/>
+    <TextField fx:id="yearField"/>
+
+    <Label text="Capacity:"/>
+    <TextField fx:id="capacityField"/>
+
+    <Label text="Driver ID:"/>
+    <ComboBox fx:id="driverIdComboBox"/>
+
+    <!-- Кнопка додавання транспорту -->
+    <Button text="Додати транспорт" onAction="#handleAddTransport"/>
+</VBox>

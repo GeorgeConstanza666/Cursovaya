@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" alignment="center" spacing="10" fx:controller="com.example.kursovaya.LoginController" style="-fx-padding: 20;">
+    <TextField fx:id="usernameField" promptText="Логін" />
+    <PasswordField fx:id="passwordField" promptText="Пароль" />
+    <Button text="Увійти" onAction="#handleLogin" />
+</VBox>
